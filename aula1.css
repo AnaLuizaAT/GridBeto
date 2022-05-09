@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    background: #333;
+    border: 1px solid red;
+    padding: 15px;
+    grid-template-rows: 1fr 5fr 1fr;/*altura das linhas*/
+    gap: 10px
+}
+
+.container div {
+    background: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+}
+
+.item2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
