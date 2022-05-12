@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    border: 1px solid red;
+    gap: 5px;
+    grid-template-areas:
+'header header header header'
+'aside article article article'
+'footer footer footer footer';
+}
+
+#header {
+    grid-area: header;
+}
+
+#aside {
+    grid-area: aside;
+}
+
+#article {
+    grid-area: article;
+    display: flex;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+.container div {
+    border: 1px solid deeppink;
+}
