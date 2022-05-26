@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function soma(x, y) {
+        return x + y
+    }
+
+    function quadrado(x) {
+        return Math.pow(x, 2)
+    }
+
+    var result = soma(2, 5)
+
+    console.log(result)
+
+    //MÉTODOS
+    var conta = {
+        saldo: 0,
+        deposita: function (x) {
+            this.saldo += x
+        }
+    }
+
+    conta.deposita(100)
+    console.log(conta.saldo)
+
+    conta.deposita(150)
+    console.log(conta.saldo)
+
+    //NAO FAÇA!
+    conta.saldo = 150
+    console.log(conta.saldo)
+
+    var soma = function () {
+        var soma = 0;
+
+        for (var i = 0; i < arguments.length; i++) {
+            soma += arguments[i]
+        }
+        return soma
+    }
+    var result2 = soma(2, 4, 6, 7, 5)
+    console.log(result2)
+</script>
+</body>
+</html>
